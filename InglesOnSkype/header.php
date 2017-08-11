@@ -40,9 +40,9 @@ ini_set('display_errors', 1);
                 </div>
                 <div class="col span_3_of_5" id="section-header-menu">
                     <ul id="menu-princ" class="mt-30">
-                        <li><a href="javascript:;" class="scrollTo" data-idelem="home">Home</a></li>
-                        <li><a href="javascript:;" class="scrollTo" data-idelem="second-session">Currículo</a></li>
+                        <!--<li><a href="javascript:;" class="scrollTo" data-idelem="home">Home</a></li>-->
                         <li><a href="javascript:;" class="scrollTo" data-idelem="third-session">Aulas</a></li>
+                        <li><a href="javascript:;" class="scrollTo" data-idelem="second-session">Sobre mim</a></li>
                         <li><a href="javascript:;" class="scrollTo" data-idelem="fourth-session">Contato</a></li>
                     </ul>
                 </div>

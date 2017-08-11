@@ -19,13 +19,13 @@
 
             <ul id="menu-circles" class="mb-25">
                 <li>
-                    <div class="circle circle-red">
-                        <a href="javascript:;" class="scrollTo" data-idelem="second-session">CURRÍCULO</a>
+                    <div class="circle circle-blue">
+                        <a href="javascript:;" class="scrollTo" data-idelem="third-session">AULAS</a>
                     </div>
                 </li>
                 <li>
-                    <div class="circle circle-blue">
-                        <a href="javascript:;" class="scrollTo" data-idelem="third-session">AULAS</a>
+                    <div class="circle circle-red">
+                        <a href="javascript:;" class="scrollTo" data-idelem="second-session">SOBRE MIM</a>
                     </div>
                 </li>
                 <li>
@@ -46,9 +46,20 @@
 </div>
 </div> <!-- #header -->
 
+<div id="third-session" class="display">
+    <div class="main-content">
+        <h3 class="session-title">AULAS</h3>
+
+        <?php
+        $txtAulas   = simple_fields_value("sessao_3_aulas_texto");
+        ?>
+        <p><?php echo nl2br($txtAulas); ?></p>
+    </div>
+</div>
+
 <div id="second-session" class="display">
     <div class="main-content">
-        <h3 class="session-title">CURRÍCULO</h3>
+        <h3 class="session-title">SOBRE MIM</h3>
 
         <ul id="curriculo">
             <?php
@@ -71,17 +82,6 @@
             }
             ?>
         </ul>
-    </div>
-</div>
-
-<div id="third-session" class="display">
-    <div class="main-content">
-        <h3 class="session-title">AULAS</h3>
-
-        <?php
-        $txtAulas   = simple_fields_value("sessao_3_aulas_texto");
-        ?>
-        <p><?php echo nl2br($txtAulas); ?></p>
     </div>
 </div>
 

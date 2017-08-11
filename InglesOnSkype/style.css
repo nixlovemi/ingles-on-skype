@@ -404,6 +404,9 @@ input, button, textarea{
 #header #menu-princ a:hover{
     color: #61d0d7;
 }
+#header #section-header-menu{
+    text-align: right;
+}
 #home .rounded-img{
     width: 385px;
     height: 380px;
