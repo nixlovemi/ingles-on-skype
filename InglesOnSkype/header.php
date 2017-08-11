@@ -29,7 +29,7 @@ ini_set('display_errors', 1);
     <body>
         <div id="first-session" class="main-content">
             <div id="header" class="display section mt-30 mb-60">
-                <div class="col span_2_of_5">
+                <div class="col span_2_of_5" id="section-header-title">
                     <?php
                     $vSiteTitle   = get_bloginfo("name");
                     $vSiteTagline = get_bloginfo("description");
@@ -38,7 +38,7 @@ ini_set('display_errors', 1);
                     <h1 class="title mb-15"><?php echo $vSiteTitle; ?></h1>
                     <h2 class="subTitle"><?php echo $vSiteTagline; ?></h2>
                 </div>
-                <div class="col span_3_of_5">
+                <div class="col span_3_of_5" id="section-header-menu">
                     <ul id="menu-princ" class="mt-30">
                         <li><a href="javascript:;" class="scrollTo" data-idelem="home">Home</a></li>
                         <li><a href="javascript:;" class="scrollTo" data-idelem="second-session">Currículo</a></li>

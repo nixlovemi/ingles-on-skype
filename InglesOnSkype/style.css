@@ -514,6 +514,36 @@ input, button, textarea{
     font-size: 14px;
 }
 
+@media (max-width: 1005px){
+    #home #section-profile-picture, #home #section-tagline, #header #section-header-title, #header #section-header-menu{
+        width: 100%;
+        display: inline-block;
+        float: none;
+    }
+    #home #section-tagline, #header #section-header-menu{
+        margin-left: 0;
+    }
+    #home .rounded-img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #home #tag-line, #home #sub-tag-line, #home #menu-circles{
+        text-align: center;
+    }
+    #home #tag-line-holder{
+        padding-left: 0;
+    }
+    #header #section-header-title, #header #section-header-menu{
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px){
+    html{
+        margin-top: 15px !important;
+    }
+}
+
 @media (max-width: 400px){
     #home .rounded-img{
         width: 269px;

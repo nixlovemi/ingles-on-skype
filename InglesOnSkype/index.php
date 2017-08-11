@@ -2,18 +2,17 @@
 <?php include("proccess-contact.php"); ?>
 
 <div id="home" class="display section mb-60">
-    <div class="col span_2_of_5">
+    <div class="col span_2_of_5" id='section-profile-picture'>
         <div class="rounded-img">
             <?php
             $return      = simple_fields_value("sessao_1_home_url_foto");
-            $vImgUrl     = ($return == "") ? "http://inglesonskype.com.br/wp-content/themes/ingles-on-skype/images/profile-picture.jpg"
-                    : $return;
+            $vImgUrl     = ($return == "") ? get_bloginfo('template_url') . "/images/profile-picture.jpg" : $return;
             ?>
 
             <img id="WPht4imgimage" alt="" data-type="image" src="<?php echo $vImgUrl; ?>">
         </div>
     </div>
-    <div class="col span_3_of_5">
+    <div class="col span_3_of_5" id="section-tagline">
         <div id="tag-line-holder">
             <h3 id="tag-line" class="mb-20">Olá,</h3>
             <p id="sub-tag-line" class="mb-25">conheça um pouco mais sobre mim e meu trabalho.</p>
@@ -40,7 +39,7 @@
             $txtHome     = simple_fields_value("sessao_1_home_texto_home");
             ?>
             <p>
-<?php echo nl2br($txtHome); ?>
+                <?php echo nl2br($txtHome); ?>
             </p>
         </div>
     </div>
