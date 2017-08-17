@@ -1,4 +1,13 @@
+<?php
+if ( !is_front_page() ) {
+  // blog page
+  include("template-blog.php");
+  return;
+}
+?>
+
 <?php get_header(); ?>
+<?php // Aulas | Sobre mim | Contato ?>
 <?php include("proccess-contact.php"); ?>
 
 <div id="home" class="display section mb-60">

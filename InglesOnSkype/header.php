@@ -41,9 +41,22 @@ ini_set('display_errors', 1);
                 <div class="col span_3_of_5" id="section-header-menu">
                     <ul id="menu-princ" class="mt-30">
                         <!--<li><a href="javascript:;" class="scrollTo" data-idelem="home">Home</a></li>-->
-                        <li><a href="javascript:;" class="scrollTo" data-idelem="third-session">Aulas</a></li>
+                        <!--<li><a href="javascript:;" class="scrollTo" data-idelem="third-session">Aulas</a></li>
                         <li><a href="javascript:;" class="scrollTo" data-idelem="second-session">Sobre mim</a></li>
-                        <li><a href="javascript:;" class="scrollTo" data-idelem="fourth-session">Contato</a></li>
+                        <li><a href="javascript:;" class="scrollTo" data-idelem="fourth-session">Contato</a></li>-->
+
+                        <?php
+                        $menuName = (is_front_page()) ? "Menu_Home": "Menu_Blog";
+                        $menu_items = wp_get_nav_menu_items($menuName);
+                        
+                        foreach ( (array) $menu_items as $key => $menu_item ) {
+                            // var_dump($menu_item);
+
+                            $title = $menu_item->title;
+                            $url = $menu_item->url;
+                            echo "<li><a href='$url'>$title</a></li>";
+                        }
+                        ?>
                     </ul>
                 </div>
             </div>

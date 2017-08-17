@@ -29,6 +29,10 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+strong, b{
+    font-size: 100%;
+    font-weight: bold;
+}
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
@@ -497,7 +501,7 @@ input, button, textarea{
     min-width: 100%;
     max-width: 100%;
 }
-#fourth-session #contact-btn{
+#fourth-session #contact-btn, #section-blog-side #sidebar li button{
     padding: 6px 14px;
     border: solid 1px #fffdd0;
     background-color: #f8f8f8;
@@ -515,6 +519,74 @@ input, button, textarea{
 #footer-session p{
     text-align: center;
     font-size: 14px;
+}
+#pageSectionTitle{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#section-blog-posts .post-item {
+    padding: 20px 0;
+    border-top: dotted 1px #FFF;
+}
+#section-blog-posts .post-item:last-child {
+    border-bottom: dotted 1px #FFF;
+}
+#section-blog-posts .post-item .title{
+    font-size: 30px;
+    font-weight: bold;
+}
+#section-blog-posts .post-item .title a{
+    color: inherit;
+}
+#section-blog-posts .post-item .info{
+    font-size: 14px;
+}
+#section-blog-posts .post-item .content{
+    width: 97%;
+}
+#section-blog-posts .post-item .content img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#section-blog-posts .post-item .content p{
+    margin-bottom: 9px;
+}
+#section-blog-side #sidebar li.side-item {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    background-color: rgba(97, 208, 212, 1);
+    padding: 6px 12px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+#section-blog-side #sidebar li.side-item .side-title{
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+#section-blog-side #sidebar li.side-item input[type="text"], #section-blog-side #sidebar li.side-item input[type="password"], #section-blog-side #sidebar li.side-item textarea{
+    width: 100%;
+    padding: 4px 3px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+#section-blog-side #sidebar li.side-item table td{
+    padding: 4px 1px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+#section-blog-side #sidebar li.side-item a{
+    color: #FFF;
+}
+#section-blog-side #sidebar li.side-item li{
+    margin-bottom: 5px;
 }
 
 @media (max-width: 1005px){
