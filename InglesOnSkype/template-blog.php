@@ -79,7 +79,7 @@
                                 ?>
                             </div>
                             <div class="share">
-                                #compartilhar-face
+                                <?php echo do_shortcode( '[ess_post share_type="count"]' ); ?>
                             </div>
                         </div>
                 

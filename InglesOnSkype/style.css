@@ -552,6 +552,11 @@ input, button, textarea{
 #section-blog-posts .post-item .content p{
     margin-bottom: 9px;
 }
+#section-blog-posts .post-item .share{
+    width: 100%;
+    background-color: #FFF;
+    padding: 12px 5px 5px 5px;
+}
 #section-blog-side #sidebar li.side-item {
     width: 100%;
     display: block;
