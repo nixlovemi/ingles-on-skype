@@ -42,6 +42,11 @@ if ( !is_front_page() ) {
                         <a href="javascript:;" class="scrollTo" data-idelem="fourth-session">CONTATO</a>
                     </div>
                 </li>
+                <li>
+                    <div class="circle circle-beige">
+                        <a href="<?php bloginfo('url'); ?>/blog">BLOG</a>
+                    </div>
+                </li>
             </ul>
 
             <?php

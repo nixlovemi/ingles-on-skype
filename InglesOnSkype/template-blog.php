@@ -25,7 +25,7 @@
 </div>
 </div> <!-- #header -->
 
-<div id="second-session" class="display">
+<div id="blog-session" class="display">
     <div class="main-content">
         <?php
         if( is_search() || is_category() ){
@@ -75,7 +75,7 @@
                             <div class="info mb-30">Por <?php the_author(); ?> | <?php echo implode(",", $arrCategories); ?> | <?php the_time('d.m.Y'); ?></div>
                             <div class="content mb-20">
                                 <?php
-                                the_content();
+                                the_content("Leia mais ...");
                                 ?>
                             </div>
                             <div class="share">
@@ -87,6 +87,9 @@
                     } // end while
                 } // end if
                 ?>
+                <div>
+                    <?php comments_template(); ?>
+                </div>
             </div>
 
             <div class="col span_1_of_3" id="section-blog-side">

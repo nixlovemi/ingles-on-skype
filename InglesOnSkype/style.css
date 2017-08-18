@@ -337,13 +337,13 @@ input, button, textarea{
     
 }
 .circle{
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%; /* may require vendor prefixes */
 }
 .circle a{
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -372,6 +372,12 @@ input, button, textarea{
 }
 .circle-soft-pink a{
     color: #4D4D4D;
+}
+.circle-beige{
+    background-color: #E8C699;
+}
+.circle-beige a{
+    color: #FFF;
 }
 .session-title{
     font-size: 40px;
@@ -441,6 +447,15 @@ input, button, textarea{
 #home #menu-circles li:last-child{
     margin-right: 0;
 }
+#blog-session{
+    width: 100%;
+    background-color: #E8C699;
+    color: #393939;
+    padding: 30px 0;
+}
+#blog-session a{
+    color: #477D9B;
+}
 #second-session{
     width: 100%;
     background-color: rgba(232, 53, 86, 1);
@@ -501,7 +516,7 @@ input, button, textarea{
     min-width: 100%;
     max-width: 100%;
 }
-#fourth-session #contact-btn, #section-blog-side #sidebar li button{
+#fourth-session #contact-btn, #section-blog-side #sidebar li button, #section-blog-posts input[type="submit"], #section-blog-posts input[type="button"]{
     padding: 6px 14px;
     border: solid 1px #fffdd0;
     background-color: #f8f8f8;
@@ -554,14 +569,12 @@ input, button, textarea{
 }
 #section-blog-posts .post-item .share{
     width: 100%;
-    background-color: #FFF;
-    padding: 12px 5px 5px 5px;
 }
 #section-blog-side #sidebar li.side-item {
     width: 100%;
     display: block;
     margin-bottom: 30px;
-    background-color: rgba(97, 208, 212, 1);
+    background-color: #FFE5C1;
     padding: 6px 12px;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -588,10 +601,10 @@ input, button, textarea{
     box-sizing: border-box;         /* Opera/IE 8+ */
 }
 #section-blog-side #sidebar li.side-item a{
-    color: #FFF;
+    /*color: #FFF;*/
 }
 #section-blog-side #sidebar li.side-item li{
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 @media (max-width: 1005px){
@@ -638,3 +651,240 @@ input, button, textarea{
 }
 
 /*=====*/
+
+/*
+COMENTARIOS
+===========*/
+/**
+ * A área de comentários do tema "TwentyFourteen"
+ * com algumas edições necessárias.
+ */
+.comments-area {
+    margin: 30px auto;
+    max-width: 100%;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.comments-area .commentmetadata{
+    margin-bottom: 15px;
+}
+
+.comments-area .reply{
+    margin-top: 15px;
+}
+
+.comments-area .form-submit{
+    margin-top: 20px;
+}
+
+.comments-area input, .comments-area textarea{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.comments-area textarea {
+    width: 100%;
+}
+
+.comment-body  {
+    border: 1px solid #fedfb4;
+    background: #FFE5C1;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.comment-reply-title,
+.comments-title {
+    font-size: 16px/1.5;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.comment-list {
+    list-style: none;
+    margin: 0 0 50px 0;
+}
+
+.comment-author {
+    font-size: 16px;
+    line-height: 1.7142857142;
+}
+
+.comment-list .reply,
+.comment-metadata {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.comment-reply-link {
+    padding: 5px 10px;
+    color: #fff !important;
+    display: inline-block;
+    background: #1e88e5 !important;
+}
+
+.comment-author .fn {
+    font-weight: 900;
+}
+
+.comment-list article,
+.comment-list .pingback,
+.comment-list .trackback {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+    padding-top: 24px;
+}
+
+.comment-list > li:first-child > article,
+.comment-list > .pingback:first-child,
+.comment-list > .trackback:first-child {
+    border-top: 0;
+}
+
+.comment-author {
+    position: relative;
+}
+
+.comment-author .avatar {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 18px;
+    padding: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+}
+
+.says {
+    display: none;
+}
+
+.comment-author,
+.comment-awaiting-moderation,
+.comment-content,
+.comment-metadata {
+    padding-left: 30px;
+}
+
+.comment-edit-link {
+    margin-left: 10px;
+}
+
+.comment-content {
+    -webkit-hyphens: auto;
+    -moz-hyphens:    auto;
+    -ms-hyphens:     auto;
+    hyphens:         auto;
+    word-wrap: break-word;
+}
+
+.comment-content ul,
+.comment-content ol {
+    margin: 0 0 24px 22px;
+}
+
+.comment-content li > ul,
+.comment-content li > ol {
+    margin-bottom: 0;
+}
+
+.comment-content > :last-child {
+    margin-bottom: 0;
+}
+
+.comment-list .children {
+    list-style: none;
+    margin-left: 15px;
+}
+
+.comment-respond {
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+.comment .comment-respond {
+    margin-top: 24px;
+}
+
+.comment-respond h3 {
+    margin-top: 0;
+    /*margin-bottom: 24px;*/
+}
+
+.comment-notes,
+.comment-awaiting-moderation,
+.logged-in-as,
+.no-comments,
+.form-allowed-tags,
+.form-allowed-tags code {
+    color: #767676;
+}
+
+.comment-notes,
+.comment-awaiting-moderation,
+.logged-in-as {
+    font-size: 14px;
+    line-height: 1.7142857142;
+}
+
+.no-comments {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1.5;
+    margin-top: 24px;
+    text-transform: uppercase;
+}
+
+.comment-form label {
+    display: block;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"] {
+    width: 100%;
+}
+
+.form-allowed-tags,
+.form-allowed-tags code {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.required {
+    color: #c0392b;
+}
+
+.comment-reply-title small a {
+    color: #2b2b2b;
+    float: none;
+    overflow: hidden;
+    font-size: 14px;
+    display: block;
+    clear: both;
+}
+
+.comment-navigation {
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 48px;
+    text-transform: uppercase;
+}
+
+.comment-navigation .nav-next,
+.comment-navigation .nav-previous {
+    display: inline-block;
+}
+
+.comment-navigation .nav-previous a {
+    margin-right: 10px;
+}
+
+#comment-nav-above {
+    margin: 15px 0;
+}
+/*=========*/
